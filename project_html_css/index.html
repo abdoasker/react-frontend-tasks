@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="./images/team-1.jpg" />
+
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+ 
+</head>
+  <body>
+      <aside class="sidebar">
+    <div class="brand">
+      <button id="toggleSidebar" class="hamburger" aria-label="Toggle menu">☰</button>
+      <span class="logo">▦</span>
+      <h1>Dashboard</h1>
+    </div>
+
+    <nav class="menu">
+      <a class="menu-item active"><span>🏠</span> Home</a>
+      <a class="menu-item"><span>👤</span> Profile</a>
+      <a class="menu-item"><span>💬</span> Messages</a>
+      <a class="menu-item"><span>🕘</span> History</a>
+      <a class="menu-item"><span>✅</span> Tasks</a>
+      <a class="menu-item"><span>👥</span> Communities</a>
+
+      <div class="menu-divider"></div>
+
+      <a class="menu-item"><span>⚙️</span> Settings</a>
+      <a class="menu-item"><span>🆘</span> Support</a>
+      <a class="menu-item"><span>🔒</span> Privacy</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Search…" />
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn" title="Notifications">🔔</button>
+        <div class="user-mini">
+          
+          <img src="./images/team-1.jpg" id="userAvatar" class="avatar sm" alt="avatar" />
+          <span id="userNameMini"> abdoasker</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Greeting -->
+    <section class="greeting card flat">
+      <div class="greet-left">
+        
+        <img src="./images/team-1.jpg" id="userAvatarLarge" class="avatar lg" alt="avatar" />
+        <div>
+          <p class="muted">Hi there,</p>
+          <h2 id="userFullName"> abdoasker </h2>
+        </div>
+      </div>
+      <div class="greet-right">
+        <button class="btn pill" id="btnNew">New</button>
+        <button class="btn pill" id="btnUpload">Upload</button>
+        <button class="btn pill" id="btnShare">Share</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- Projects -->
+      <div class="projects">
+        <h3>Your Projects</h3>
+        <div id="projectsGrid" class="cards-grid">
+      
+          <article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example.</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in voluptates, illo deleniti adipisci quos dignissimos nihil?</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article><article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tempore doloremque? Molestias eius recusandae natus modi ex!.</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article><article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque vero magnam voluptatibus eaque optio maxime molestias blanditiis.\</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus doloribus natus ad sit ratione recusandae laudantium? Tenetur?</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article><article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet enim quae eaque sunt labore! Pariatur, dolor.</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus doloribus natus ad sit ratione recusandae laudantium? Tenetur?</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article><article class="card project">
+            <div class="accent"></div>
+            <div class="body">
+              <h4 class="title">Project Alpha</h4>
+              <p class="desc">First constant project example. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet enim quae eaque sunt labore! Pariatur, dolor.</p>
+              <div class="actions">
+                <button title="Favorite" class="icon-btn">⭐</button>
+                <button title="Watch" class="icon-btn">👁️</button>
+                <button title="Share" class="icon-btn">🤝</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <aside class="right-col">
+        <h3>Announcements</h3>
+        <div class="card">
+          <ul id="announcements" class="list separated">
+            
+            
+            <li>
+              <h4 class="title">System Update</h4>
+              <p class="desc muted">The system will be updated on Friday.</p>
+            </li>
+            <li>
+              <h4 class="title">System Update</h4>
+              <p class="desc muted">The system will be updated on Friday.</p>
+            </li>
+            <li>
+              <h4 class="title">System Update</h4>
+              <p class="desc muted">The system will be updated on Friday.</p>
+            </li>
+          </ul>
+        </div>
+
+        <h3>Trending</h3>
+        <div class="card">
+          <ul id="trending" class="list users">
+            
+            <li class="user">
+              <img class="avatar xs" src="./images/team-1.jpg" alt="avatar" />
+              <div>
+                <strong class="handle">@abdoasker</strong>
+                <p class="muted small">Frontend Developer</p>
+              </div>
+            </li>
+           <li class="user">
+              <img class="avatar xs" src="./images/team-1.jpg" alt="avatar" />
+              <div>
+                <strong class="handle">@abdoasker</strong>
+                <p class="muted small">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="user">
+              <img class="avatar xs" src="./images/team-1.jpg" alt="avatar" />
+              <div>
+                <strong class="handle">@abdoasker</strong>
+                <p class="muted small">Frontend Developer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+  </body>
+</html>
