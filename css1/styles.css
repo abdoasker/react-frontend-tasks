@@ -1,0 +1,91 @@
+/* Step 1: Set all elements’ box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Step 2: All h1 elements color */
+h1 {
+    color: #2c3e50;
+}
+
+/* Step 3: Font size 2.5rem and uppercase for post title */
+.post-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Step 4: Special ID list item background yellow */
+#special-item {
+    background-color: yellow;
+}
+
+/* Step 5: All links inside .content green */
+.content a {
+    color: green;
+}
+
+/* Step 6: Remove bullet points from direct li children */
+.list > li {
+    list-style: none;
+}
+
+/* Step 7: Red border for text inputs */
+input[type="text"] {
+    border: 1px solid red;
+}
+
+/* Step 8: Highlight hover turns orange */
+.highlight:hover {
+    color: orange;
+}
+
+/* Step 9: First letter of intro paragraph twice as large */
+.intro::first-letter {
+    font-size: 200%;
+}
+
+/* Step 10: All inputs except submit have background #f0f0f0 */
+input:not([type="submit"]) {
+    background-color: #f0f0f0;
+}
+
+/* Step 11: Post title & subtitle use Arial */
+.post-title,
+.post-subtitle {
+    font-family: Arial, sans-serif;
+}
+
+/* Step 12: h2.post-subtitle color purple */
+h2.post-subtitle {
+    color: purple;
+}
+
+/* Step 13: More specific selector to override inline style */
+#blog-post h1.post-title {
+    color: #2c3e50 !important;
+}
+
+/* Step 14: Padding, margin, border for .content */
+.content {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333;
+}
+
+/* Step 15: Width 80%, max-width 600px */
+.content {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Step 16: Center intro paragraph & underline */
+.intro {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Step 17: Highlight inline-block with 10px horizontal margin */
+.highlight {
+    display: inline-block;
+    margin: 0 10px;
+}
