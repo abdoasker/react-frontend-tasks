@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment</title>
+</head>
+<body>
+  <!-- 1. Button with alert -->
+  <button onclick="showName()">Click Me</button>
+
+  <script>
+    // 1. Function for button alert
+    function showName() {
+      alert("My name is Abdullatif");
+    }
+
+    // 2. Variable changing type
+    let value = 10; 
+    console.log("Number value:", value);
+    value = "Ten"; 
+    console.log("String value:", value);
+
+    // 3. Function sum
+    function sum(a, b) {
+      console.log("Sum:", a + b);
+    }
+    sum(5, 7);
+
+    // 4. if/else check number
+    let num = -3;
+    if (num > 0) {
+      console.log("Positive");
+    } else if (num < 0) {
+      console.log("Negative");
+    } else {
+      console.log("Zero");
+    }
+
+    // 5. for loop 1 to 10
+    for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+
+    // 6. while loop 10 down to 1
+    let j = 10;
+    while (j >= 1) {
+      console.log(j);
+      j--;
+    }
+
+    // 7. switch statement for colors
+    let color = "green";
+    switch (color) {
+      case "red":
+        console.log("Color is Red");
+        break;
+      case "green":
+        console.log("Color is Green");
+        break;
+      case "blue":
+        console.log("Color is Blue");
+        break;
+      default:
+        console.log("Other color");
+    }
+
+    // 8. NaN, null, undefined
+    let notANumber = 0 / 0;
+    let emptyValue = null;
+    let undefinedValue;
+    console.log("NaN:", notANumber);
+    console.log("Null:", emptyValue);
+    console.log("Undefined:", undefinedValue);
+
+    // 9. Convert string to number and check NaN
+    function toNumber(str) {
+      let converted = Number(str);
+      console.log("Converted:", converted, "Is NaN?", isNaN(converted));
+    }
+    toNumber("123");
+    toNumber("abc");
+
+    // 10. Object with missing property
+    let person = { name: "Ali", age: 20 };
+    console.log("Non-existing property:", person.address);
+
+    // 11. Function with no return
+    function noReturn() {
+      let x = 5 + 5;
+    }
+    console.log("No return function result:", noReturn());
+
+    // 12. Nested if: check even and positive
+    let checkNum = 4;
+    if (checkNum > 0) {
+      if (checkNum % 2 === 0) {
+        console.log("Number is positive and even");
+      } else {
+        console.log("Number is positive but odd");
+      }
+    } else {
+      console.log("Number is not positive");
+    }
+
+    // 13. Loop sum from 1 to 100
+    let total = 0;
+    for (let k = 1; k <= 100; k++) {
+      total += k;
+    }
+    console.log("Sum 1 to 100:", total);
+  </script>
+</body>
+</html>
