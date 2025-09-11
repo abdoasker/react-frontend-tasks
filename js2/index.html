@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 2</title>
+</head>
+<body>
+  <script>
+    // 1. Check if number is positive, negative, or zero
+    let number = parseInt(prompt("Enter a number:"));
+    if (number > 0) {
+      console.log("Positive");
+    } else if (number < 0) {
+      console.log("Negative");
+    } else {
+      console.log("Zero");
+    }
+
+    // 2. confirm() example
+    if (confirm("Do you want to proceed?")) {
+      alert("You chose to proceed");
+    } else {
+      alert("Action canceled");
+    }
+
+    // 3. Ternary operator
+    var num = 10;
+    num % 2 === 0 ? console.log("hi") : console.log("hello");
+
+    // 4. Age validation + loop
+    let age;
+    while (true) {
+      age = prompt("Enter your age (positive number):");
+      if (age === null) break; // user clicked Cancel
+      age = Number(age);
+      if (isNaN(age) || age <= 0) {
+        alert("Invalid age, try again!");
+        continue;
+      }
+      if (age >= 1 && age <= 10) {
+        alert("Child");
+      } else if (age >= 11 && age <= 18) {
+        alert("Teenager");
+      } else if (age >= 19 && age <= 50) {
+        alert("Grown up");
+      } else {
+        alert("Old");
+      }
+    }
+
+    // 5. Count vowels in a string
+    let str = prompt("Enter a string:");
+    let vowels = str.match(/[aeiou]/gi);
+    console.log("Number of vowels:", vowels ? vowels.length : 0);
+
+    // 6. Convert 24-hour to 12-hour
+    let hour = parseInt(prompt("Enter the hour (0-23):"));
+    if (!isNaN(hour) && hour >= 0 && hour <= 23) {
+      let suffix = hour >= 12 ? "PM" : "AM";
+      let hour12 = hour % 12 === 0 ? 12 : hour % 12;
+      alert(hour12 + suffix);
+    } else {
+      alert("Invalid hour!");
+    }
+
+    // 7. Capitalize first letter
+    let inputStr = prompt("Enter a string:");
+    if (inputStr) {
+      let capitalized = inputStr.charAt(0).toUpperCase() + inputStr.slice(1);
+      alert(capitalized);
+    }
+
+    // 8. Confirm favorite color
+    let favColor = prompt("Enter your favorite color:");
+    if (favColor !== null) {
+      if (confirm(`You chose ${favColor}. Is that correct?`)) {
+        alert("Great choice!");
+      } else {
+        alert("Let's try again.");
+      }
+    }
+
+    // 9. Password loop
+    let password = "12345"; // Example password
+    let userPass;
+    while (true) {
+      userPass = prompt("Enter the password:");
+      if (userPass === password) {
+        alert("Access granted!");
+        break;
+      }
+    }
+
+    // 10. Compare dates
+    let d1 = new Date("2025-01-01");
+    let d2 = new Date("2025-08-17");
+    console.log("d1 is earlier than d2?", d1 < d2);
+
+    // 11. Days between two dates
+    let date1 = new Date("2025-01-01");
+    let date2 = new Date("2025-08-17");
+    let diff = Math.abs(date2 - date1);
+    let days = diff / (1000 * 60 * 60 * 24);
+    console.log("Days difference:", days);
+
+    // 12. Sum of even numbers between 1 and 100
+    let sumEven = 0;
+    for (let i = 1; i <= 100; i++) {
+      if (i % 2 === 0) sumEven += i;
+    }
+    console.log("Sum of even numbers 1-100:", sumEven);
+
+    // 13. Extract "World" from "Hello World!"
+    let text = "Hello World!";
+    console.log(text.substring(6, 11)); // World
+
+    // 14. Round to 2 decimal places
+    let numToRound = 5.678;
+    console.log(numToRound.toFixed(2)); // 5.68
+
+    // 15. Divisible by 3 and 5
+    function divisibleBy3And5(n) {
+      return n % 3 === 0 && n % 5 === 0;
+    }
+    console.log(divisibleBy3And5(15)); // true
+    console.log(divisibleBy3And5(10)); // false
+  </script>
+</body>
+</html>
