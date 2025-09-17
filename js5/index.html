@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .completed { text-decoration: line-through; color: gray; }
+    #task-manager, #profile-section, #timed-events { margin-bottom: 40px; }
+    button { margin: 5px; }
+  </style>
+</head>
+<body>
+  <!-- Task 1: Persistent Task Manager -->
+  <div id="task-manager">
+    <h2>My Tasks</h2>
+    <input type="text" id="task-input" placeholder="Enter a new task..." />
+    <input type="date" id="task-due-date" />
+    <button id="add-task-btn">Add Task</button>
+    <ul id="task-list"></ul>
+  </div>
+
+  <!-- Task 2: Asynchronous User Profile Card -->
+  <div id="profile-section">
+    <h2>User Profile</h2>
+    <button id="get-user-btn">Get Random User</button>
+    <div id="profile-card"></div>
+  </div>
+
+  <!-- Task 3: Timers -->
+  <div id="timed-events">
+    <h2>Notifications & Timer</h2>
+    <p>A special welcome message will appear in 3 seconds!</p>
+    <div id="timer-display">10</div>
+    <button id="start-timer-btn">Start Countdown</button>
+    <br/>
+    <button onclick="setTheme('dark'); saveThemePreference('dark')">Dark Mode</button>
+    <button onclick="setTheme('light'); saveThemePreference('light')">Light Mode</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="task-1.js"></script>
+  <script src="task-2.js"></script>
+  <script src="task-3.js"></script>
+</body>
+</html>
