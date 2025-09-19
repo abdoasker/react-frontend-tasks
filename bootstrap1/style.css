@@ -1,0 +1,22 @@
+.block {
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: limegreen;
+}
+
+/* تكبير بعض البلوكات */
+.block:nth-child(3) { height: 150px; }  /* block 3 */
+.block:nth-child(4) { height: 200px; }  /* block 6 */
+.block:nth-child(9) { height: 120px; }  /* block 9 */
