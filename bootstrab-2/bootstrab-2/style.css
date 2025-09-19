@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.carousel-item img{
+    max-height: 600px;
+}
+
+.carousel-caption > h5 ,p{
+    color: black;
+}
+
+#containerCard img{
+    max-height: 300px;
+    max-height: 250px;
+}
+
