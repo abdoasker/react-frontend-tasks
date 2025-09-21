@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <title>Change color & Video Control</title>
+</head>
+
+<body>
+
+    <div class="container text-center mt-5">
+        <label>Red
+            <input type="range" id="red" min="0" max="255" value="0">
+        </label>
+
+        <label>Green
+            <input type="range" id="green" min="0" max="255" value="0">
+        </label>
+
+        <label>Blue
+            <input type="range" id="blue" min="0" max="255" value="0">
+        </label>
+
+        <p id="textColor">Hello World</p>
+    </div>
+    <br><br>
+
+    <!-- 2 -->
+    <div class="container">
+        <video src="assets/mov_bbb.mp4" id="video" width="600px" type="video/mp4"></video>
+            <br><br>
+            <input type="range" id="progress" min="0" max="100" value="0" />
+            <span id="time">0:00</span> / <span id="totalTime">0:10</span>
+            <br><br>
+
+            <button onclick="playVideo()">Play</button>
+            <button onclick="pauseVideo()">Pause</button>
+            <button onclick="stopVideo()">Stop</button>
+
+            <button onclick="reverseVideo()">&laquo;</button>
+            <button onclick="back5()">&lt;</button>
+            <button onclick="fwd5()">&gt;</button>
+            <button onclick="forwardVideo()">&raquo;</button>
+
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1" />
+            <button onclick="muteVideo()">Mute</button>
+            <br><br>
+
+            <label for="speed">Speed</label>
+            <input type="range" id="speed" min="0" max="5" step="0.1" value="1" />
+    </div>
+
+
+</body>
+<script src="assets/main.js"></script>
+<script src="assets/bootstrap.bundle.min.js"></script>
+
+</html>
