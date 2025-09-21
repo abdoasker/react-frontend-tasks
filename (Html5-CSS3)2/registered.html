@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourData</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+</head>
+<body>
+    <h2 class="fw-bolder">Your Data:</h2>
+    <div class="container" id="data">
+    </div>
+
+<script>
+  window.onload = function() {
+    const saved = localStorage.getItem("formData");
+    if (saved) {
+      const { namee, email, pass, address, city, color, gender } = JSON.parse(saved);
+      document.getElementById("data").innerHTML = `
+        <p>Name: ${namee}</p>
+        <p>Email: ${email}</p>
+        <p>Password: ${pass}</p>
+        <p>Address: ${address}</p>
+        <p>City: ${city}</p>
+        <p>Color: ${color}</p>
+        <p>Gender: ${gender}</p>
+      `;
+    }
+  };
+</script>
+
+
+    
+</body>
+<!-- <script src="assets/main.js"></script> -->
+<script src="assets/bootstrap.bundle.min.js"></script>
+</html>
